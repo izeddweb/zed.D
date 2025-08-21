@@ -1,0 +1,89 @@
+/* star media mobile  */
+@media screen and (max-width: 480px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .nav {
+    height: 40px;
+    width: 100%;
+    align-items: flex-end;
+    margin: 0;
+    padding: 4px ;
+  }
+  .toggle-nav {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-mode .mode {
+    right: 0px;
+  }
+  .header .header-container .nav .list-items {
+    flex-direction: column;
+    height: auto;
+    width: 119px;
+    top: 123px;
+    padding: 5px;
+    left: -180px;
+    border-radius: 6px;
+  }
+
+  .header .header-container .nav .list-items .item .link {
+    height: 30px;
+    line-height: 30px;
+  }
+  .main .section-home .home-container {
+    padding-top: 220px;
+  }
+  .main .section-home .home-container .photo-home {
+    display: none;
+  }
+}
+
+/* Styles for screens between 768px and 1024px (e.g., tablets in landscape, small laptops) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .nav {
+    height: 40px;
+    width: 100%;
+    align-items: flex-end;
+    margin: 0;
+  }
+  .toggle-nav {
+    display: none;
+  }
+  .header .header-container .nav .list-items {
+    top: 0;
+  }
+  .header .header-container .nav .list-items .item .link {
+    text-align: center;
+    width: 100%;
+  }
+  .header .header-container .container-mode {
+    margin-top: 30px;
+  }
+
+  .main .section-home .home-container {
+    position: relative;
+  }
+  .main .section-home .home-container .description-home {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .main .section-home .home-container .photo-home {
+    position: absolute;
+    margin-top: -194px;
+  }
+}
+
+/* Styles for screens between 993px and 1200px */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+}
+
+/* Styles for screens 1201px and wider */
+@media screen and (min-width: 1201px) {
+}
