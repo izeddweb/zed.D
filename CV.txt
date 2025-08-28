@@ -1,0 +1,83 @@
+
+
+
+
+### 👤 Personal Information
+
+Name:Abdeltif Zeddini
+Email:abzedd61@gmail.com. OR abzedd61@gmail.com
+Phone:00216 28 155 243
+Location: Tunisie Tunis 
+LinkedIn:** \[linkedin.com/in/yourname] *(optional)*
+GitHub:** \[github.com/yourusername] *(recommended)*
+
+---
+
+### 🎯 Profile Summary
+
+Enthusiastic and self-motivated junior frontend developer with a strong foundation in HTML, CSS, JavaScript, and modern web technologies. Passionate about building responsive, user-friendly websites. Eager to learn and grow through hands-on experience, ideally through a training or internship opportunity.
+
+---
+
+### 💻 Technical Skills
+
+Languages:HTML5, CSS3, JavaScript (ES6+)
+Frameworks: React.js (basic), Bootstrap, 
+Tools:Git, GitHub, VS Code, Chrome DevTools
+Other: Responsive Design, Basic SEO, Debugging
+
+---
+
+### 🛠️ Projects
+
+#### 🧪 Portfolio Website
+
+* Built a personal portfolio website to showcase my skills and projects.
+* Technologies: HTML, CSS, JavaScript
+* GitHub: \[link to repo] | Live: \[link to live site]
+
+         
+          @@@@@.  in the near future @@@@@@
+
+#### 🛒 Mini E-commerce Landing Page
+
+* Created a responsive product landing page with basic cart functionality.
+* Technologies: HTML, CSS, JavaScript
+
+#### 🌐 Weather App (Using API)
+
+* A simple app that fetches and displays weather data from a public API.
+* Technologies: JavaScript, HTML, CSS, OpenWeather API
+
+> *More projects available on GitHub.*
+
+---
+
+### 🎓 Education
+
+**\[Your Most Recent Education]**
+\[Your School or University Name] – \[Degree or Certificate]
+\[Year Started] – \[Year Completed or “Ongoing”]
+
+---
+
+### 🚀 Objective / Career Goal
+
+Looking for a **junior frontend developer training program** or **internship** where I can apply my skills, learn from experienced developers, and grow into a professional frontend developer.
+
+---
+
+### 🗣️ Languages
+
+* English: \[Your level – e.g. Intermediate / Fluent]
+* [Other Languages]: [Level]
+
+---
+
+### 📌 Additional Information
+
+* Available for remote or on-site training/internship
+* Quick learner and team player
+* Willing to work hard and adapt to new tools and frameworks
+
+

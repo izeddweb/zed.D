@@ -1,3 +1,9 @@
+// document.addEventListener("DOMContentLoaded", () => {
+//   const iconsGit = document.querySelectorAll("i");
+//   console.log(icons); // Should show a NodeList of <i> elements
+// });
+
+
 // set switch mode
 
 const mode = document.querySelector(".mode");
@@ -131,7 +137,7 @@ function goToTop() {
 
 // set animation title home section
 
-const jobs = Array.from(document.querySelectorAll(".job p "));
+const jobs = Array.from(document.querySelectorAll(".feature-job p "));
 let currentIndex = 0;
 setInterval(function () {
   jobs.forEach((element) => {
@@ -155,6 +161,15 @@ job.forEach((element) => {
     });
     this.style.flexGrow = 1;
 
+    if (element.getAttribute("style")) {
+      progressBar.forEach((element) => {
+        animateWidth();
+        // console.log(element.children[0].getAttribute('style'));
+      });
+    } else {
+      console.log("no");
+      console.log(element.getAttribute("style"));
+    }
     Array.from(contentJob).forEach((element) => {
       element.classList.remove("hide");
       data === element.getAttribute("data-job")
@@ -167,7 +182,40 @@ job.forEach((element) => {
 // set width for progress bar
 const progressBar = document.querySelectorAll(".progress-bar");
 
-progressBar.forEach((element) => {
-  const newWidth = `${element.getAttribute("data-complite")}%`;
-  element.children[0].style.width = newWidth;
+function animateWidth() {
+  setInterval(() => {
+    progressBar.forEach((element) => {
+      const newWidth = `${element.getAttribute("data-complite")}%`;
+      element.children[0].style.width = newWidth;
+    });
+  }, 1000);
+}
+
+const btnCv = document.querySelector(".btn-cv");
+btnCv.addEventListener("click", downCV);
+function downCV() {
+  const link = document.createElement("a");
+  link.href = "/CV.txt";
+  link.download = "My-CV.txt";
+  link.click();
+}
+
+
+const iconsGit = document.querySelectorAll("i");
+
+iconsGit.forEach((element) => {
+  const gitHub = element.classList.contains("fa-github");
+  const linkedIn = element.classList.contains("fa-linkedin");
+  const faceBook = element.classList.contains("fa-facebook");
+  element.addEventListener("click", function (e) {
+    console.log(element);
+    
+    if (element.classList.contains("fa-github")) {
+      console.log(element);
+
+    }else{
+      console.log('no');
+      
+    }
+  });
 });

@@ -8,7 +8,7 @@
     width: 100%;
     align-items: flex-end;
     margin: 0;
-    padding: 4px ;
+    padding: 4px;
   }
   .toggle-nav {
     display: block;
@@ -38,6 +38,52 @@
   }
   .main .section-home .home-container .photo-home {
     display: none;
+  }
+  .about-container {
+  height: auto;
+}
+  .about-container .jobs {
+  display: block;
+  height: 100%;
+}
+  .content-job p {
+  padding: 10px;
+}
+.about-container .jobs .job h5 {
+  display: block;
+  writing-mode: horizontal-tb; 
+  /* font-size: 12px; */
+  
+}
+.about-container .job {
+  height:fit-content ;
+  margin: 5px 0;
+  flex-direction: column;
+  justify-content: center;
+}
+  .content-job strong{
+    display: none;
+  }
+  .skills {
+    justify-content: center;
+  }
+  .skills .skill {
+    flex-direction: row;
+    height: 10px;
+    padding: 4px;
+    margin: 4px 0;
+  }
+
+  .skills .skill .progress-bar {
+    height: auto;
+    flex-grow: 1;
+    justify-content: center;
+    height: 5px;
+    padding: 3px;
+  }
+  .skills .skill .progress {
+    height: 5px;
+    justify-content: center;
   }
 }
 
@@ -77,6 +123,9 @@
   .main .section-home .home-container .photo-home {
     position: absolute;
     margin-top: -194px;
+  }
+  .skills .skill .progress-bar {
+    width: 85px;
   }
 }
 

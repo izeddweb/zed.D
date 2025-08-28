@@ -11,6 +11,9 @@
   --bg-white: #121212;
   --color-black: #f5f5f5;
 } */
+svg {
+  cursor: pointer;
+}
 li {
   list-style: none;
 }
@@ -18,6 +21,25 @@ a {
   text-decoration: none;
   color: #000000;
   cursor: pointer;
+  background-color: #ffffff;
+}
+button,
+.btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(14px);
+  background-color: transparent;
+  align-items: center;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(255, 0, 0);
+  color: white;
 }
 
 * {
@@ -104,6 +126,8 @@ header {
   color: inherit;
   height: 40px;
   padding: 5px;
+  backdrop-filter: blur(14px);
+  background-color: transparent;
 }
 
 .list-items {
@@ -396,12 +420,7 @@ main .section-home {
   margin: auto;
   position: relative;
 }
-.about-container {
-  width: 85%;
-  height: 100%;
-  display: inline-flex;
-  padding: 20px;
-}
+
 .description-about {
   padding: 80px 20px;
   background: #dddbdb;
@@ -424,9 +443,8 @@ main .section-home {
   color: #555;
 }
 
-
 .about-container {
-  height: calc(100% - 190px);
+  height: calc(100% - 160px);
   width: 90%;
   padding: 10px;
   margin: auto;
@@ -443,9 +461,10 @@ main .section-home {
   display: flex;
   justify-content: center;
   gap: 10px;
-  transition:all 0.4s;
+  transition: all 0.4s;
 }
 .about-container .jobs .job {
+  height: 100%;
   background-color: red;
   border-radius: 8px;
   display: flex;
@@ -454,8 +473,7 @@ main .section-home {
   flex-grow: 0;
   padding: 10px;
   cursor: pointer;
-  transition: all .4s;
-  
+  transition: all 0.4s;
 }
 .about-container .jobs .job h5 {
   display: flex;
@@ -472,15 +490,15 @@ main .section-home {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  /* width: 100%; */
   border-radius: 6px;
   padding: 0 20px;
-  transition:all 0.4s;
+  transition: all 0.4s;
 }
 .about-container .jobs .job .content-job.hide {
   display: none;
-  transition:all 0.4s;
+  transition: all 0.4s;
 }
 .content-job strong {
   font-size: 28px;
@@ -502,6 +520,9 @@ main .section-home {
   /* width: 140px; */
   height: 40px;
 }
+.skills .skill span {
+  margin: 10px;
+}
 
 .skills .skill .progress-bar {
   height: 13px;
@@ -511,8 +532,10 @@ main .section-home {
   padding: 8px;
   border: 1px solid rgb(255, 255, 255);
   position: relative;
+  transition: all 0.4s;
 }
 .skills .skill .progress {
+  transition: all 0.4s;
   position: absolute;
   content: "";
   top: 0;
@@ -521,9 +544,8 @@ main .section-home {
   background-color: rgb(255, 1, 1);
   color: #000;
   border-radius: 7px;
+  text-align: right;
 }
-
-
 
 /* section portfolio */
 
@@ -618,8 +640,9 @@ main .section-home {
   transform: translate(-50%, -50%);
   width: 85%;
   height: 85%;
-  overflow: auto; /* Scroll if needed */
-  background-color: rgba(253, 1, 1, 1);
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(14px);
   border-radius: 8px;
   opacity: 1;
   transition: opacity 0.4s ease, transform 0.3s ease;
@@ -738,23 +761,7 @@ main .section-home {
 .btn-sign {
   z-index: 111;
 }
-button,
-.btn {
-  width: 80px;
-  height: 40px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  background-color: #fff;
-  align-items: center;
-  border: none;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.btn:hover {
-  background: rgb(255, 0, 0);
-  color: white;
-}
+
 .section-form .sign-in,
 .section-form .Log-In {
   height: 400px;
@@ -816,6 +823,47 @@ button,
   left: 10px;
 }
 
+/* section drop line */
+
+.drop-line{
+  width: 85%;
+  height: 100%;
+}
+.drop-line .container-drop{
+  width:auto;
+  height: 100%;
+  margin: auto;
+  padding: 40px 0;
+  /* background-color: red; */
+  border: 2px solid red;
+}
+.drop-line .container-drop .drop-title{
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  margin: 30px auto;
+}
+.drop-line .container-drop .controll-drop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+.drop-line .container-drop .controll-drop #input-drop{
+  height: 40px;
+  width: 200px;
+  background-color: #cdc8c8;
+  border: none;
+  outline: none;
+  margin: 0 20px;
+  border-radius: 20px;
+}
+.drop-line .container-drop .controll-drop .btn-drop{}
+
+
+
+
+
 /* star footer */
 
 .footer {
@@ -855,7 +903,7 @@ button,
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .4s;
+  transition: 0.4s;
   cursor: pointer;
 }
 .footer .icon-footer span:hover {
