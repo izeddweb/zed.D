@@ -24,11 +24,11 @@
         <div class="logo">logo</div>
         <nav class="nav white">
           <ul class="list-items">
-            <li class="item"><a href="" class="link active">home</a></li>
-            <li class="item"><a href="" class="link">about</a></li>
-            <li class="item"><a href="" class="link">portfolio</a></li>
-            <li class="item"><a href="" class="link">contact</a></li>
-            <li class="item"><a href="" class="link">more</a></li>
+            <li class="item itemNav"><a href="#home" class="link active">home</a></li>
+            <li class="item itemNav"><a href="#about" class="link">about</a></li>
+            <li class="item itemNav"><a href="#portfolio" class="link">portfolio</a></li>
+            <li class="item itemNav"><a href="#contact" class="link">contact</a></li>
+            <li class="item itemNav"><a href="" class="link">more</a></li>
           </ul>
           <div class="container-mode white">
             <div class="toggle-nav">
@@ -48,7 +48,7 @@
     <!-- star main -->
     <main class="main">
       <!-- star section home -->
-      <section class="section-home">
+      <section id="home" class="section-home">
         <div class="home-container">
           <div class="description-home">
             <p class="welcome">Hello, I'm</p>
@@ -81,7 +81,7 @@
       </section>
       <!-- end section home -->
       <!-- star section about  1 -->
-      <section class="section-about1">
+      <section id="about" class="section-about1">
         <div class="section-container">
           <div class="section-title">
             <span></span>
@@ -255,7 +255,7 @@
 
       <!-- end section about  2 -->
       <!-- star section portfolio -->
-      <section class="section-portfolio">
+      <section id="portfolio" class="section-portfolio">
         <div class="section-container">
           <div class="section-title">
             <div class="desc-sec">Browse My Recent</div>
@@ -265,7 +265,7 @@
         <div class="container-portfolio">
           <nav class="nav">
             <ul class="list-items">
-              <li class="item"><a class="link" data-name="all">all</a></li>
+              <li class="item"><a class="link active" data-name="all">all</a></li>
               <li class="item">
                 <a class="link" data-name="mobile">mobile</a>
               </li>
@@ -361,7 +361,7 @@
       </section>
       <!-- end section portfolio -->
       <!-- star section contact -->
-      <section class="section-contact">
+      <section id="contact" class="section-contact">
         <div class="section-container">
           <div class="section-title">
             <div class="desc-sec">Get in Touch</div>
@@ -373,7 +373,7 @@
             <div class="photo-cover">
               <img src="./assets/imgs/10.jpg" alt="" />
               <!-- <video
-                src="/assets/imgs/dance (free Palestine)💥 copy.mp4"
+                src="./assets/imgs/dance (free Palestine)💥 copy.mp4"
                 autoplay  
               ></video> -->
               <btton class="btn btn-sign">Sign In</btton>
@@ -468,8 +468,8 @@
                 <option value="General Question">General Question</option>
                 <option value="Feedback">Feedback</option>
                 <option value="Support">Work</option>
-                <option value="Other">Other</option></select
-              >
+                <option value="Other">Other</option>
+              </select>
               <textarea
                 name="message"
                 placeholder="Your Message"

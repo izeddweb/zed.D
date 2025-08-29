@@ -146,24 +146,25 @@ header {
 .translate {
   transform: translateX(140px);
 }
-.list-items .item {
+  /* .list-items .itemNav, */
+  .list-items .item {
   height: 30px;
   line-height: 40px;
   width: 75px;
   display: flex;
 }
-.list-items .link {
+
+.list-items .item .link {
   text-decoration: none;
   display: inline-block;
   margin: 0 3px;
   text-align: center;
-  /* height: 60%; */
   width: 100%;
   border-radius: 4px;
   transition: 0.4s;
 }
-.list-items .link.active,
-.list-items .link:hover {
+.list-items .item .link.active,
+.list-items .item .link:hover {
   border-bottom: #fb0000 solid 30px;
 }
 .header .header-container .container-mode {
@@ -518,7 +519,6 @@ main .section-home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 140px; */
   height: 40px;
 }
 .skills .skill span {
@@ -591,6 +591,9 @@ main .section-home {
   transition: 0.5s;
   border: 1px solid rebeccapurple;
   z-index: 22;
+}
+.section-portfolio .container-portfolio .nav .list-items .item .link.active {
+  background-color: red;
 }
 .section-portfolio .container-portfolio .nav .list-items .item .link:after {
   position: absolute;
@@ -827,7 +830,6 @@ main .section-home {
 /* section drop line */
 
 .drop-line {
-  background: url(/assets/imgs/red-black-fluidjpg\ copy.jpg), center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -853,8 +855,9 @@ main .section-home {
   flex-direction: column;
 }
 #drop-form {
-  background: rgba(255, 255, 255, 0.3); /* semi-transparent */
-  backdrop-filter: blur(10px);
+  background: rgb(255, 0, 0); /* semi-transparent */
+  /* backdrop-filter: blur(10px); */
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -898,7 +901,13 @@ main .section-home {
 #drop-form .drop-line-submit {
   width: 100%;
   height: 25px;
-  background-color: red;
+  background: rgba(255, 255, 255, 0.611); /* semi-transparent */
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+#drop-form .drop-line-submit:hover {
+  background: rgb(255, 255, 255);
+  color: #000;
 }
 
 /* star footer */
@@ -906,7 +915,6 @@ main .section-home {
 .footer {
   height: 100px;
   width: 100%;
-  border: 1px solid red;
 }
 .footer-container {
   width: 85%;

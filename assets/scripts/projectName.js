@@ -49,6 +49,18 @@ mode.addEventListener("click", function (e) {
     }
   }
 });
+// set active for navbar links
+const navLinks = document.querySelectorAll(".itemNav .link")
+navLinks.forEach(ele =>{
+  ele.addEventListener('click',function(e){
+    navLinks.forEach(ele =>{
+      ele.classList.remove('active')
+    })
+    ele.classList.add('active')
+
+  })
+  
+})
 
 // set borger nav
 
@@ -82,13 +94,21 @@ const boxPortfolio = document.querySelectorAll(".box-project");
 
 navPortfolio.forEach((link) => {
   link.addEventListener("click", () => {
+     // set animation
     const dataName = link.getAttribute("data-name");
     boxPortfolio.forEach((box) => {
       const match =
         dataName === "all" || box.getAttribute("data-cat") === dataName;
-
       match ? box.classList.remove("hide") : box.classList.add("hide");
     });
+
+    // set active
+    navPortfolio.forEach((link) => {
+      link.classList.remove('active')
+    })
+    link.classList.add('active')
+
+
   });
 });
 
@@ -201,21 +221,21 @@ function downCV() {
 }
 
 
-const iconsGit = document.querySelectorAll("i");
+// const iconsGit = document.querySelectorAll("i");
 
-iconsGit.forEach((element) => {
-  const gitHub = element.classList.contains("fa-github");
-  const linkedIn = element.classList.contains("fa-linkedin");
-  const faceBook = element.classList.contains("fa-facebook");
-  element.addEventListener("click", function (e) {
-    console.log(element);
+// iconsGit.forEach((element) => {
+//   const gitHub = element.classList.contains("fa-github");
+//   const linkedIn = element.classList.contains("fa-linkedin");
+//   const faceBook = element.classList.contains("fa-facebook");
+//   element.addEventListener("click", function (e) {
+//     console.log(element);
     
-    if (element.classList.contains("fa-github")) {
-      console.log(element);
+//     if (element.classList.contains("fa-github")) {
+//       console.log(element);
 
-    }else{
-      console.log('no');
+//     }else{
+//       console.log('no');
       
-    }
-  });
-});
+//     }
+//   });
+// });
