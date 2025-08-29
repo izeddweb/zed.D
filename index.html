@@ -443,8 +443,40 @@
         <div class="container-drop">
           <p class="drop-title">Drop Me Line</p>
           <div class="controll-drop">
-            <input type="text" name="input-drop-line" id="input-drop" placeholder="Send Me Same Text " />
-            <button class="btn btn-drop" type="submit">send</button>
+            <form
+              id="drop-form"
+              action="mailto:abzedd61@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="input-control-form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <select name="subject" id="subject" required>
+                <option value="">your subject</option>
+                <option value="General Question">General Question</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Support">Work</option>
+                <option value="Other">Other</option></select
+              >
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button class="drop-line-submit" type="submit">Send</button>
+            </form>
           </div>
         </div>
       </section>
