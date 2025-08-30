@@ -1,8 +1,10 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   const iconsGit = document.querySelectorAll("i");
-//   console.log(icons); // Should show a NodeList of <i> elements
-// });
+//  set window scrool
 
+//  @@@@@@@@@        handle this
+
+// window.addEventListener("scroll", function () {
+//   body.scrollIntoView({ behavior: "smooth" });
+// });
 
 // set switch mode
 
@@ -50,17 +52,15 @@ mode.addEventListener("click", function (e) {
   }
 });
 // set active for navbar links
-const navLinks = document.querySelectorAll(".itemNav .link")
-navLinks.forEach(ele =>{
-  ele.addEventListener('click',function(e){
-    navLinks.forEach(ele =>{
-      ele.classList.remove('active')
-    })
-    ele.classList.add('active')
-
-  })
-  
-})
+const navLinks = document.querySelectorAll(".itemNav .link");
+navLinks.forEach((ele) => {
+  ele.addEventListener("click", function (e) {
+    navLinks.forEach((ele) => {
+      ele.classList.remove("active");
+    });
+    ele.classList.add("active");
+  });
+});
 
 // set borger nav
 
@@ -94,7 +94,7 @@ const boxPortfolio = document.querySelectorAll(".box-project");
 
 navPortfolio.forEach((link) => {
   link.addEventListener("click", () => {
-     // set animation
+    // set animation
     const dataName = link.getAttribute("data-name");
     boxPortfolio.forEach((box) => {
       const match =
@@ -104,11 +104,9 @@ navPortfolio.forEach((link) => {
 
     // set active
     navPortfolio.forEach((link) => {
-      link.classList.remove('active')
-    })
-    link.classList.add('active')
-
-
+      link.classList.remove("active");
+    });
+    link.classList.add("active");
   });
 });
 
@@ -184,12 +182,8 @@ job.forEach((element) => {
     if (element.getAttribute("style")) {
       progressBar.forEach((element) => {
         animateWidth();
-        // console.log(element.children[0].getAttribute('style'));
       });
-    } else {
-      console.log("no");
-      console.log(element.getAttribute("style"));
-    }
+    } 
     Array.from(contentJob).forEach((element) => {
       element.classList.remove("hide");
       data === element.getAttribute("data-job")
@@ -211,6 +205,8 @@ function animateWidth() {
   }, 1000);
 }
 
+// set button submit for download CV
+
 const btnCv = document.querySelector(".btn-cv");
 btnCv.addEventListener("click", downCV);
 function downCV() {
@@ -220,22 +216,11 @@ function downCV() {
   link.click();
 }
 
+// set input in focus 
+const inputs = document.querySelectorAll('input')
+inputs.forEach(input =>{
+  input.addEventListener('focus',function(){
+    input.innerHTML = ''
+  })
 
-// const iconsGit = document.querySelectorAll("i");
-
-// iconsGit.forEach((element) => {
-//   const gitHub = element.classList.contains("fa-github");
-//   const linkedIn = element.classList.contains("fa-linkedin");
-//   const faceBook = element.classList.contains("fa-facebook");
-//   element.addEventListener("click", function (e) {
-//     console.log(element);
-    
-//     if (element.classList.contains("fa-github")) {
-//       console.log(element);
-
-//     }else{
-//       console.log('no');
-      
-//     }
-//   });
-// });
+})
